@@ -1,0 +1,126 @@
+/* text-shadow seems to make a mess of everything */
+* {
+    text-shadow: none
+}
+
+body {
+    color: #777;
+    background: #1e1e1e;
+    background-color: #1e1e1e;
+}
+
+/* Weird gradients... */
+.pull-request-content > .commit-files .diff-tree-search-wrapper .search::before,
+.commits-table .message::after,
+.commits-table tr.focused-commit .message::after,
+#commits-table .message .tags-container:before,
+.filebrowser-table .directory-file-history.message::after
+{
+    background-image: none !important;
+}
+
+/* Lot of special text colors that don't do well in the dark */
+h1, h2, h3, h4, h5,
+.jstree.file-tree > ul a,
+.breadcrumbs span.stub,
+table.aui>tbody>tr, table.aui>tfoot>tr,
+.commits-table .message .message-subject,
+.comment-container .panel,
+input#title,
+.markup-editor textarea,
+form.aui .textarea,
+.markup-content{
+    color: #777;
+}
+
+/* Weird backsplash on comments */
+.diff-view.text-view .added.line .comment-box {
+    background-color: #748874;
+    border-top-color: #748874;
+}
+
+/* For merged commit line links */
+.commit-list-jira-issues-col a{
+    color: #83c1ff !important
+}
+
+.bitbucket-theme a.secondary-link {
+    color: #CCC;
+}
+
+.file-content .content-view .line {
+    color: #5f7994;
+}
+
+#footer-logo,
+#repository-nav-pull-requests,
+.aui-sidebar .aui-sidebar-wrapper,
+.aui-sidebar-submenu .aui-sidebar-wrapper,
+.aui-page-panel-nav,
+.aui-page-panel-content,
+.aui-page-panel-item,
+.aui-page-panel-sidebar,
+.branch-from-to,
+.markup-editor textarea,
+.markup-toolbar,
+.pull-request-header .reviewer-avatar-list,
+.file-tree-container,
+.file-tree-wrapper,
+.pull-request-content > .commit-files .diff-tree-toolbar,
+.file-toolbar,
+.text-view .line,
+.text-view .line .CodeMirror-gutter-elt > *,
+.full-window-scrolling .skipped-container[data-below=false],
+.unified-diff .CodeMirror-scroll,
+table.aui>tbody>tr,
+.file-content,
+.aui-inline-dialog,
+.CodeMirror,
+.aui-inline-dialog-contents contents,
+.comment-container .panel,
+.welcome-mat,
+.aui-inline-dialog .aui-inline-dialog-contents,
+.form.aui .text,
+input#title,
+form.aui .aui-select2-container .select2-choices,
+.dashboard-repositories .dashboard-repository-list-container{
+    background: #1e1e1e !important;
+    background-color: #1e1e1e !important;
+    border-color: #333 !important;
+}
+
+/* Diff text of added code */
+.diff-view.text-view .added.line {
+    background: #1e2e1e !important;
+    background-color: #1e2e1e !important;
+}
+
+/* Diff text of removed code */
+.diff-view.text-view .removed.line {
+    background: #2e1e1e !important;
+    background-color: #2e1e1e !important;
+}
+
+/* Outline for adding comments */
+.diff-view.text-view .commented.line .comment-box {
+    background: #828282 !important;
+    background-color: #828282 !important;
+}
+
+/* Badge color */
+.aui-badge,
+.aui-sidebar[aria-expanded="false"] .aui-sidebar-group-tier-one>.aui-nav>li>.aui-nav-item>.aui-badge{
+    background: rgba(0,0,0,1) !important;
+    color: white;
+}
+
+.aui-nav-item-label {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.jstree .jstree-hovered,
+.jstree .jstree-clicked,
+.aui-nav-selected a{
+    background-color: #333 !important;
+}
