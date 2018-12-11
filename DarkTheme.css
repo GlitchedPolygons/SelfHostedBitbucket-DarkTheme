@@ -3,6 +3,7 @@ Added code lines in diff view
 */
 .added, .added.line .bitbucket-gutter-marker {
     background: #243c24 !important;
+    background-color: #3c2424 !important;
 }
 
 /*
@@ -10,6 +11,7 @@ Removed code lines in diff view
 */
 .removed, .removed.line .bitbucket-gutter-marker {
     background: #3c2424 !important;
+    background-color: #3c2424 !important;
 }
 
 /* 
@@ -25,9 +27,31 @@ textarea,
 .markup code,
 .commit-list,
 .commit-list-item,
+.branch-list-action-item,
+.aui-dropdown2.aui-style-default:hover a,
 #task-list-dialog,
-#build-status-dialog {
+#build-status-dialog,
+#pull-request-merge-dialog {
     background: #1e1e1e !important;
+    background-color: #1e1e1e !important;
+}
+
+/*
+Interactable elements
+*/
+button,
+.commit-message-subject,
+.search-results-item a:hover,
+.aui-dropdown2:hover,
+.content-above,
+.showmore,
+.content-below,
+.jstree-clicked,
+.jstree-hovered,
+.bitbucket-theme .commit-selector-item-message:hover,
+.aui-dropdown2.aui-style-default:hover a:not(.aui-dropdown2-disabled):hover,
+.line-number {
+    background: #2c2c2c !important;
 }
 
 /*
@@ -59,29 +83,25 @@ be black for readability.
     color: black !important;
 }
 
+/*
+Tasks. Bright and obvious.
+*/
+.task-content {
+    color: #4dcbcb !important;
+}
+
+/*
+Code
+*/
+.CodeMirror, .markup .code {
+    color: #b6a999 !important;
+}
 
 /*
 Make buttons a bit prettier
 */
 .aui-button {
     border-radius: 5px;
-}
-
-/*
-Interactable elements
-*/
-button,
-.commit-message-subject,
-.search-results-item a:hover,
-.aui-dropdown2:hover,
-.content-above,
-.showmore,
-.content-below,
-.jstree-clicked,
-.jstree-hovered,
-.bitbucket-theme .commit-selector-item-message:hover,
-.line-number {
-    background: #2c2c2c !important;
 }
 
 /*
@@ -108,22 +128,10 @@ label,
 .markup-editor,
 .commit-message-subject,
 .count,
-.aui-badge {
+.aui-badge,
+.project-key,
+.project-description {
     color: #b69fb6 !important;
-}
-
-/*
-Tasks. Bright and obvious.
-*/
-.task-content {
-    color: #4dcbcb !important;
-}
-
-/*
-Code
-*/
-.CodeMirror, .markup .code {
-    color: #b6a999 !important;
 }
 
 /*
